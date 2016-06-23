@@ -26,21 +26,22 @@ space reduction, while improving generalization
 
 ![2a](assets/2a.png)
 
-Robot learns a lot initially, reaching 80% winning rate in 350 rounds. 
-Total # of Round: 3000.
-Epsilon: 0.2 (where e= 1.0 is 100% random)
+- Robot learns a lot initially, reaching 80% winning rate in 350 rounds. 
+- Total # of Round: 3000.
+- Epsilon: 0.2 (where e= 1.0 is 100% random)
 
 
 #### Comparing Performance of On-Policy vs Off-Policy learning
 
 I compare the difference between QLearning and SARSA, in both, the training stage (e=0.2), and the performance after that (e=0).
+
 ![2b](assets/2b.png)
 
 ![2b_2](assets/2b_2.png)
 
-As expected, QLearning works better for robocode.
-On-Policy: SARSA.
-OFF-Policy: Q-Learning
+- As expected, QLearning works better for robocode.
+    - On-Policy: SARSA.
+    - OFF-Policy: Q-Learning
 
 #### Comparing Performance With and Without Intermediate Rewards
 
@@ -53,11 +54,11 @@ Using only terminal rewards works terribly with tasks like robocode.
 
 ![3a](assets/3a.png)
 
-Training Stage: 1000 rounds, for varies epsilon values.
-Performance Stage: epsilon is then set to 0.
-The graph shows the performance stage (e=0), using specific epsilon values at the training stage.
-Very high or very low epsilon values do not yield the best results.
-From those tested epsilon values, e=0.5 achieved the highest winning rate (99%).
+- Training Stage: 1000 rounds, for varies epsilon values.
+- Performance Stage: epsilon is then set to 0.
+- The graph shows the performance stage (e=0), using specific epsilon values at the training stage.
+- Very high or very low epsilon values do not yield the best results.
+- From those tested epsilon values, e=0.5 achieved the highest winning rate (99%).
 
 
 ## Reinforcement Learning with Back Propagation
@@ -81,7 +82,7 @@ Following is the result of training the Neural Network using contents of the LUT
 
 In the graph, I’m only showing 500 epochs. The error keeps getting smaller the longer the program runs. After 1000 epochs, the RMS error reaches 0.00078.
 
-Using intuition and trial and error, I found the following to give the best results for my setup:
+- Using intuition and trial and error, I found the following to give the best results for my setup:
     - Number of Inputs: 21 (5 for Energy, 10 of Distance, 2 for GunHeat, and 4 for Action).
     - Number of Hidden Neurons: 15 (any range from 10-15 gave me similar results).
     - Learning Rate: 0.2
@@ -97,6 +98,7 @@ Following is a side-by-side comparison of the input representation used in Part 
 ![3_1_c](assets/3_1_c.png)
 
 The Output ranges from [-1, 1].
+
 Following is the results of my robot from Part 2 (LUT with state space reduction) versus the neural net based robot using less state space reduction.
 
 ![3_1_c_2](assets/3_1_c_2.png)
