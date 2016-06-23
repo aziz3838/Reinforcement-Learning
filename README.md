@@ -67,7 +67,7 @@ From those tested epsilon values, e=0.5 achieved the highest winning rate (99%).
 
 I used one Neural Network, with a single output. Following is the diagram for the Neural Network:
 
-![3_1_a](3_1_a.png)
+![3_1_a](assets/3_1_a.png)
 
 #### Off-line Training
 
@@ -77,7 +77,7 @@ Neural Network with feed forward was used, with back propagation training. I cap
 
 Following is the result of training the Neural Network using contents of the LUT from Part 2:
 
-![3_1_b](3_1_b.png)
+![3_1_b](assets/3_1_b.png)
 
 In the graph, I’m only showing 500 epochs. The error keeps getting smaller the longer the program runs. After 1000 epochs, the RMS error reaches 0.00078.
 
@@ -94,12 +94,12 @@ Using intuition and trial and error, I found the following to give the best resu
 
 Following is a side-by-side comparison of the input representation used in Part 2 with that used by the neural net in Part 3:
 
-![3_1_c](3_1_c.png)
+![3_1_c](assets/3_1_c.png)
 
 The Output ranges from [-1, 1].
 Following is the results of my robot from Part 2 (LUT with state space reduction) versus the neural net based robot using less state space reduction.
 
-![3_1_c_2](3_1_c_2.png)
+![3_1_c_2](assets/3_1_c_2.png)
 
 The results appear to be very similar. The trade-off of approximation in the NN seemed to be compensated by the fact I am using less space reduction.
 
@@ -115,18 +115,18 @@ Obtaining the results was done in two stages - online training, and performance.
 1. Online Training Stage:
 I set the epsilon value to 0.8 (high exploration), and let the robot play 3000 rounds, as shown in the following graph:
 
-![3_2_a](3_2_a.png)
+![3_2_a](assets/3_2_a.png)
 
 2. Performance Stage:
 After training the robot in the previous stage, I turned off the exploration function (epsilon = 0), and let the robot play for 500 rounds, as shown in the following graph:
 
-![3_2_a_2](3_2_a_2.png)
+![3_2_a_2](assets/3_2_a_2.png)
 
 The graph shows an average winning rate of 98% in those 500 rounds.
 
 Following is the e(s) plot for three, randomly selected, state-action pairs:
 
-![3_2_a_3](3_2_a_3.png)
+![3_2_a_3](assets/3_2_a_3.png)
 
 This result is captured by playing 1000 battles. 
 - Observations:
@@ -135,4 +135,4 @@ This result is captured by playing 1000 battles.
 
 Following is the win rate against number of battles:
 
-![3_2_b](3_2_b.png)
+![3_2_b](assets/3_2_b.png)
