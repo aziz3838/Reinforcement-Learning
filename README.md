@@ -68,7 +68,7 @@ Using only terminal rewards works terribly with tasks like robocode.
 
 I used one Neural Network, with a single output. Following is the diagram for the Neural Network:
 
-![3_1_a](assets/3_1_a.png)
+![3_1_a](assets/3_1_a.jpg)
 
 #### Off-line Training
 
@@ -95,7 +95,11 @@ In the graph, I’m only showing 500 epochs. The error keeps getting smaller the
 
 Following is a side-by-side comparison of the input representation used in Part 2 with that used by the neural net in Part 3:
 
-![3_1_c](assets/3_1_c.png)
+![3_1_c](assets/3_1_c.jpg)
+
+![3_1_c_1_2](assets/3_1_c_1_2.jpg)
+
+![3_1_c_1_3](assets/3_1_c_1_3.jpg)
 
 The Output ranges from [-1, 1].
 
